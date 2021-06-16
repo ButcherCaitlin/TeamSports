@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <h2 class="animate__animated animate__rubberBand"><i class="fas fa-volleyball-ball"></i><i class="fas fa-baseball-ball"></i><i class="fas fa-futbol"><i class="fas fa-football-ball"></i><i class="fas fa-basketball-ball"></i></i></h2>
+    
+    
+    <!-- Bootssectionap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/93d37f7505.js" crossorigin="anonymous"></script>
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <aside>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Team Sports</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lorem Ipsum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Dolor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+  </aside>
+  <label for="searchTable" class="searchTable">Search Table:</label>
+  <input type="search" id = "search" class="searchTable" name="searchTable" placeholder="Search...">
+   <div id="dynamicTable" class="animate__animated animate__rollIn"></div>
+    <div id="table">
+       
+        
+        <div class="headerName">Team Name</div>
+        <div class="headerLeague"> League</div>
+        <div class="headerCoach">Coach</div>
+        <div class="headerAdmin">Team Admin and Phone</div>
+        <div class="headerNumPlayers">Number of Players</div>
+        <div class="edit">Edit</div>
+    
+      
+    
+      <div class="team1Name">Tigers</div>
+      <div class="team1League">Boys U-10</div>
+      <div class="team1Coach">John Doe</div>
+      <div class="team1Admin">James Jam - (123) 712 - 1234</div>
+      <div class="team1Players">5</div>
+      
+      <div class="button1"><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt team1" id="team1"></i><br>
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Information" data-content="Tigers, Boys U-10">Info</button>
+      </div>
+    
+   
+    
+       
+        <div class="team2Name">Dolphins</div>
+        <div class="team2League">Girls U-10</div>
+        <div class="team2Coach">Jane Doen</div>
+        <div class="team2Admin">Tom Johnson (234) 567 - 8901</div>
+        <div class="team2Players">8</div>
+        <div class="buttonTwo"><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt team2" id="team2"></i><br>
+            <button type="button" class="btn btn-info" id="dolphins" data-toggle="popover" title="Information" data-content="Dolphins, Girls U-10">Info</button></div>
+     
+        
+      
+       
+        <div class="team3Name">Parrots</div>
+        <div class="team3League">Girls 13-14</div>
+        <div class="team3Coach">Josie Doe</div>
+        <div class="team3Admin">Carrie Nelson (345) 678 - 9012</div>
+        <div class="team3Players">10</div>
+        <div class="buttonThree"><i class="fas fa-edit"></i><br><i class="fas fa-trash-alt" id="team3"></i><br>
+            <button type="button" class="btn btn-info" data-toggle="popover" title="Information" data-content="Parrots, Girls 13-14">Info</button></div>
+      
+    
+        </div>
+      <div id="result"></div>
+      
+    
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootssectionap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootssectionapcdn.com/bootssectionap/4.5.0/js/bootssectionap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js" integrity="sha256-Jvh9+A4HNbbWsWl1Dw7kAzNsU3y8elGIjLnUSUNMtLg=" crossorigin="anonymous"></script>
+    <script src="lodash.js"></script>
+    <script src="app.js"></script>
+  </body>
+  <footer>Copyright @2020 Caitlin Butcher</footer>
+</html>

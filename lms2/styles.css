@@ -1,0 +1,198 @@
+@media screen and (min-width: 768px){
+#dynamicTable {
+    display:grid;
+    border: 1px solid darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    table-layout: fixed;
+}
+}
+.searchTable {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#search{
+    border: 1px solid darkblue;
+    border-radius: 2px;
+    font-style: italic;
+}
+/*#table {
+    display:grid;
+    grid-template-columns: repeat(6, 5fr);
+    grid-template-rows: auto;
+    border: solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(253, 253, 249);
+    justify-content: center;
+    text-align: center;
+    grid-template-areas: "headName  headCoach headAdmin options"
+                          "oneName   oneCoach oneAdmin   btn1"
+                          "twoName  twoCoach twoAdmin  btn2"
+                          "threeName  threeCoach threeAdmin  btn3";
+    
+}*/
+
+
+@media screen and (min-width: 768px){
+#table {
+   
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    border: solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(253, 253, 249);
+    justify-content: center;
+    text-align: center;
+    grid-template-areas: "headName  headLeague headCoach headAdmin headNumPlayers options"
+                          "oneName oneLeague  oneCoach oneAdmin  onePlayers btn1"
+                          "twoName twoLeague twoCoach twoAdmin twoPlayers btn2"
+                          "threeName threeLeague threeCoach threeAdmin threePlayers btn3";
+    
+}
+}
+
+.headerID {
+    grid-area: headID;
+    
+}
+
+.headerName {
+    grid-area: headName;
+    border-bottom: solid darkblue;
+    grid-template-rows: 1/2;
+    font-size: 16px;
+    font-weight: bold;
+}
+.headerLeague {
+    grid-area: headLeague;
+    border-bottom: solid darkblue;
+    grid-template-rows: 3/4;
+    font-size: 16px;
+    font-weight: bold;
+}
+.headerCoach {
+    grid-area: headCoach;
+    border-bottom: solid darkblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+.headerAdmin {
+    grid-area: headAdmin;
+    border-bottom: solid darkblue;
+    grid-template-rows: 4 / 6;
+    font-size: 16px;
+    font-weight: bold;
+}
+.headerNumPlayers {
+    grid-area: headNumPlayers;
+    border-bottom: solid darkblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+.team1Name{
+    grid-area: oneName;
+    background-color: rgb(234,249,255);
+    border-bottom: solid darkblue;
+}
+.team2Name{
+    grid-area: twoName;
+    border-bottom: solid darkblue;
+}
+.team3Name{
+    grid-area: threeName;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team1League {
+    grid-area: oneLeague;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team2League {
+    grid-area: twoLeague;
+    border-bottom: solid darkblue;
+}
+.team3League {
+    grid-area: threeLeague;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team1Coach {
+    grid-area: oneCoach;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team2Coach {
+    grid-area: twoCoach;
+    border-bottom: solid darkblue;
+}
+.team3Coach {
+    grid-area: threeCoach;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team1Admin {
+    grid-area: oneAdmin;
+    background-color: rgb(234,249,255);
+    border-bottom: solid darkblue;
+}
+.team2Admin {
+    grid-area: twoAdmin;
+    border-bottom: solid darkblue;
+}
+.team3Admin {
+    grid-area: threeAdmin;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team1Players {
+    grid-area: onePlayers;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.team2Players {
+    grid-area: twoPlayers;
+    border-bottom: solid darkblue;
+}
+.team3Players {
+    grid-area: threePlayers;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255);
+}
+.edit{
+    grid-area: options;
+    border-bottom: solid darkblue;
+    /*grid-template-columns: 2 / 5;*/
+    font-size: 18px;
+    font-weight: bold;
+}
+.button1 {
+    grid-area: btn1;
+    background-color: rgb(234,249,255);
+    border-bottom: solid darkblue;
+}
+.buttonTwo {
+    grid-area: btn2;
+    border-bottom: solid darkblue;
+}
+.buttonThree {
+    grid-area: btn3;
+    border-bottom: solid darkblue;
+    background-color: rgb(234,249,255)
+}
+footer {
+    text-align: center;
+    justify-self: bottom;
+}
+body {
+    background-image: url("blue.jpg");
+}
+
+aside {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
